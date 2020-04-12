@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body style="background-color:powderblue;">
+		<h1>Personal Form</h1>
+
+		<form>
+		  <label for="fname">First name:</label><br>
+		  <input type="text" id="fname" name="fname" value="Umair"><br>
+		  <label for="lname">Last name:</label><br>
+		  <input type="text" id="lname" name="lname" value="Khan"><br><br>  
+		</form>
+
+		<button onclick="myFunction()">Submit</button>
+		<p id="demo"></p>
+
+		<script>
+			function myFunction() {
+				document.getElementById("demo").innerHTML = document.getElementById("fname").value + " " + document.getElementById("lname").value;
+			}
+		</script>
+
+	</body>
+</html>
