@@ -1,6 +1,13 @@
 #!/bin/bash
 
-for j in `seq 40`
+if [ $# -eq 0 ]
+  then
+    n_commits=1
+else
+    n_commits=$1
+fi
+
+for j in `seq $n_commits`
 do
     cat <(head -n-7 index.htm) \
         <(
